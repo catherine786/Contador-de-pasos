@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         } else if (view.getId() == R.id.cardViewNuevoReto) {
             // Abre la actividad de "Nuevo Reto"
-            intent = new Intent(this, NuevoRetoActivity.class);
-            startActivity(intent);
+            //intent = new Intent(this, NuevoRetoActivity.class);
+            //startActivity(intent);
         }
     }
 }
