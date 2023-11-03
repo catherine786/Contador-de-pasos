@@ -14,7 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SensorEventListener{
 
     private SensorManager mSensorManager = null;
     private Sensor stepSensor;
@@ -63,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
     private void resetSteps(){
         pasos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
     private void saveData(){
         SharedPreferences sharedPref = getSharedPreferences("mypref", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
+        //editor.putInt("key1", previosPasosTotales);
         editor.putString("key1", String.valueOf(previosPasosTotales));
         editor.apply();
 
