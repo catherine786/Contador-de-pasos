@@ -11,19 +11,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    // Función que se ejecuta cuando se hace clic en un CardView
     public void onCardViewClick(View view) {
         Intent intent;
 
         if (view.getId() == R.id.cardViewRutinaLibre) {
-            // Abre la actividad de "Rutina Libre"
             intent = new Intent(this, RutinaLibreActivity.class);
             startActivity(intent);
         } else if (view.getId() == R.id.cardViewNuevoReto) {
-            // Abre la actividad de "Nuevo Reto"
-            //intent = new Intent(this, NuevoRetoActivity.class);
-            //startActivity(intent);
+            intent = new Intent(this, NuevoRetoActivity.class);
+            startActivity(intent);
         }
     }
 }

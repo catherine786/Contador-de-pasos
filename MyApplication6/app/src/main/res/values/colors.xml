@@ -3,4 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="celeste">#1778F9</color>
+    <color name="verdelimon">#FFA0FC36</color>
+    <color name="rojo">#FFF85D5D</color>
+    <color name="blanco">#E5E8F1</color>
+    <color name="morado">#9A98CA</color>
+    <color name="violeta">#352A73</color>
 </resources>
